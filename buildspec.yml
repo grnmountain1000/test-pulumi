@@ -8,8 +8,8 @@ phases:
   install:
     on-failure: ABORT
     commands:
-      echo 'test codebuild'
-      echo env  
+      - echo 'test codebuild'
+      - echo env  
       
       - apt-get update
       - apt-get -y upgrade
