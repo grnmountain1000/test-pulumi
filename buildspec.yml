@@ -9,7 +9,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo 'test codebuild'
-      - echo env  
+      - env  
       
       - apt-get update
       - apt-get -y upgrade
