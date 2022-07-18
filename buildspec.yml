@@ -10,6 +10,8 @@ phases:
     commands:
       - echo -n 'Commit Tag = '
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - pwd
+      - cat README.md
 artifacts:
   files:
     - './**/*'
