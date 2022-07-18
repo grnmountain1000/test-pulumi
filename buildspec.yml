@@ -12,6 +12,7 @@ phases:
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - pwd
       - cat README.md
+      - cat buildspec.yml
 artifacts:
   files:
     - './**/*'
