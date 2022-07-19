@@ -13,6 +13,7 @@ phases:
       - pwd
       - cat README.md
       - cat buildspec.yml
+      - ./find-changes.sh
 artifacts:
   files:
     - './**/*'
