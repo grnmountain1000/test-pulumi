@@ -12,6 +12,8 @@ phases:
       - aws ssm get-parameter --name  GITACCESS_TOKEN --output text | cut -f6
       - export GIT_TOKEN=`aws ssm get-parameter --name  GITACCESS_TOKEN --output text | cut -f6`      
       - echo $GIT_TOKEN
+      - export GIT_STRING='https://'+$GIT_TOKEN+':github.com/eplexity/pulumi-sandbox.git'
+
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - pwd
       - cat README.md
