@@ -11,7 +11,7 @@ phases:
       - echo -n 'Commit Tag = '
       - aws ssm get-parameter --name  GITACCESS_TOKEN --output text | cut -f6
       - export GIT_TOKEN=`aws ssm get-parameter --name  GITACCESS_TOKEN --output text | cut -f6`      
-      - env
+      - echo $GIT_TOKEN
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - pwd
       - cat README.md
