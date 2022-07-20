@@ -1,4 +1,5 @@
 #!/bin/sh
+env
 aws s3 ls
 git init
 git clone https://github.com/eplexity/pulumi-sandbox.git
