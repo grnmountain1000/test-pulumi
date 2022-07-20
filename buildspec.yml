@@ -9,7 +9,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo -n 'Commit Tag = '
-      - aws ssm get-parameter --name  GITACCESS_TOKEN | grep Value | cut -d': ' -f1 
+      - aws ssm get-parameter --name  GITACCESS_TOKEN | grep Value 
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - pwd
       - cat README.md
