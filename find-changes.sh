@@ -5,6 +5,6 @@ git init
 git clone $GIT_STRING
 #ls -ltR
 #git fetch origin  
-git fetch 
-git diff-tree --no-commit-id --name-only -r $(git rev-parse --verify HEAD)
+#git fetch 
+#git diff-tree --no-commit-id --name-only -r $(git rev-parse --verify HEAD)
 
