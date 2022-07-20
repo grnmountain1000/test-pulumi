@@ -1,5 +1,5 @@
 #!/bin/sh
-
+aws s3 ls
 git init
 git clone https://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:github.com/eplexity/pulumi-sandbox.git
 ls -ltR
