@@ -1,6 +1,6 @@
 #!/bin/sh
-echo $GIT_TOKEN
 aws s3 ls
+printenv GIT_TOKEN
 git init
 git clone https://github.com/eplexity/pulumi-sandbox.git
 ls -ltR
