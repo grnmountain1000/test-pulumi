@@ -18,6 +18,7 @@ phases:
       - pwd
       - cat README.md
       - cat buildspec.yml
+      - cat find-changes.sh
       - chmod +x find-changes.sh
       - ./find-changes.sh
 artifacts:
