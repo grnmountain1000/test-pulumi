@@ -5,8 +5,10 @@ git init
 #git clone  --mirror  $GIT_STRING
 git clone   --depth 2  $GIT_STRING
 
-# move into the repo
-cd pulumi-sandbox
+# check repo clone location
+#   we want to be in the repo where the .git directory is
+#   change into the repo
+cd test-pulumi
 
 
 #git rev-parse origin/main
