@@ -2,7 +2,9 @@
 aws s3 ls
 echo $GIT_STRING
 git init
-git clone  --mirror  $GIT_STRING
+#git clone  --mirror  $GIT_STRING
+git clone   --depth 2  $GIT_STRING
+
 #ls -ltR
 git rev-parse origin/main
 
