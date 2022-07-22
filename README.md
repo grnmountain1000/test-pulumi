@@ -2,6 +2,7 @@
 ##
 ## Eplexity
 ##
-# test-pulumi
+## This is a test repo for the codebuild pipeline
+#
 
 
