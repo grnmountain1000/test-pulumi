@@ -1,5 +1,5 @@
 #!/bin/sh
-#aws s3 ls
+
 echo $GIT_STRING
 git init
 

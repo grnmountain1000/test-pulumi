@@ -18,10 +18,10 @@ phases:
       - export GIT_STRING='https://'$GIT_TOKEN'@github.com/grnmountain1000/test-pulumi.git'
 
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
-      - pwd
-      - cat README.md
-      - cat buildspec.yml
-      - cat find-changes.sh
+#      - pwd
+#      - cat README.md
+#      - cat buildspec.yml
+#      - cat find-changes.sh
       - chmod +x find-changes.sh
       - ./find-changes.sh
 artifacts:
